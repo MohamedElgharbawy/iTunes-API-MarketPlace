@@ -15,6 +15,6 @@ https://search.maven.org/search?q=g:org.json%20AND%20a:json&core=gav
 
 Download the 20180813 version.
 
-    Right click on Project > Build Path > Configure Build Path > Libraries > Add External Jar > Select the downloaded jar.
+    Right click on Project > Build Path > Configure Build Path > Libraries > Add External Jar > Select the downloaded jar
     
 
