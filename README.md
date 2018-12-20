@@ -6,8 +6,8 @@ Topic: A marketplace to buy music and movies, and store them in a local library.
 
 	Members: 
 		Mohamed Elgharbawy
-    Eugene Kim
-    Vyvy Tran
+    		Eugene Kim
+    		Vyvy Tran
     
 ### Required JSON package to run the program:
 
