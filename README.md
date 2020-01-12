@@ -1,6 +1,6 @@
 # iTunes-API-Marketplace
 
-Our CIS 36B final project.
+My CIS 36B final project.
 
 Topic: A marketplace to buy music and movies, and store them in a local library.
 
