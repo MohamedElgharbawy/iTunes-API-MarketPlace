@@ -12,37 +12,37 @@ public class Main {
 				
         final int CURRENT_MONTH = 11;
         
-		Scanner input = new Scanner(System.in);
-		boolean more = true;		// For try catch when searching
-		String menuChoice = "";
-		String songChoice = "";
-		String movieChoice = "";
-		String cartChoice = "";
-		
-		Cart cart = new Cart();
-		Library library = new Library();
-		library.loadLibrary();
-		
-		System.out.println("Welcome to JavaTunes!");
-		
-		System.out.println("\n**** Login ****");
-		System.out.print("\nEnter username: ");
-		String username = input.nextLine();
-		System.out.print("Enter password: ");
-		String password = input.nextLine();
-		
-		UserList<User> userList = new UserList<User>();
-		UserList<PremiumUser> premiumUserList = new UserList<PremiumUser>();
-		loadUsers(userList, premiumUserList);
-		userList.bubbleSort();
-		premiumUserList.bubbleSort();
-		
-		boolean isPremium = false;
+	Scanner input = new Scanner(System.in);
+	boolean more = true;		// For try catch when searching
+	String menuChoice = "";
+	String songChoice = "";
+	String movieChoice = "";
+	String cartChoice = "";
 
-		User standardUser = new User(username, password);
-		PremiumUser premiumUser = new PremiumUser(username, password);
+	Cart cart = new Cart();
+	Library library = new Library();
+	library.loadLibrary();
 
-		int position = premiumUserList.linearSearch(premiumUser);
+	System.out.println("Welcome to JavaTunes!");
+
+	System.out.println("\n**** Login ****");
+	System.out.print("\nEnter username: ");
+	String username = input.nextLine();
+	System.out.print("Enter password: ");
+	String password = input.nextLine();
+
+	UserList<User> userList = new UserList<User>();
+	UserList<PremiumUser> premiumUserList = new UserList<PremiumUser>();
+	loadUsers(userList, premiumUserList);
+	userList.bubbleSort();
+	premiumUserList.bubbleSort();
+
+	boolean isPremium = false;
+
+	User standardUser = new User(username, password);
+	PremiumUser premiumUser = new PremiumUser(username, password);
+
+	int position = premiumUserList.linearSearch(premiumUser);
 		
         if(position != -1)
         {
