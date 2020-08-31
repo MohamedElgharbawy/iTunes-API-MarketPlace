@@ -45,9 +45,9 @@ public abstract class iTunes {
 		try {
 			
 			BufferedReader rd = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
-    		String jsonText = readAll(rd);
-    		JSONObject json = new JSONObject(jsonText);
-    		return json;
+			String jsonText = readAll(rd);
+			JSONObject json = new JSONObject(jsonText);
+			return json;
 		} catch (IOException e) {
 			System.out.println("I/O Exception Occured.");
 			return null;
